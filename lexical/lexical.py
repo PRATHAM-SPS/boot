@@ -1,9 +1,9 @@
 import re
 def lex(input_string):
     # Define regular expressions for valid tokens
-    float_regex = r'\d+\.\d+'
+     float_regex = r'\d+\.\d+'
     identifier_regex = r'[a-zA-Z_]\w*'
-    operator_regex = r'[+\-*/=]'
+     operator_regex = r'[+\-*/=]'
 
     # Tokenize the input string
     tokens = re.findall(f'{float_regex}  |{identifier_regex}|{operator_regex}', input_string)
