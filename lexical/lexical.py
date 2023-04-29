@@ -1,6 +1,5 @@
 import re
-
-                                               def lex(input_string):
+def lex(input_string):
     # Define regular expressions for valid tokens
     float_regex = r'\d+\.\d+'
     identifier_regex = r'[a-zA-Z_]\w*'
