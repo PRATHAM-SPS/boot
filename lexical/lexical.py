@@ -1,13 +1,13 @@
 import re
 
-def lex(input_string):
+                                               def lex(input_string):
     # Define regular expressions for valid tokens
     float_regex = r'\d+\.\d+'
     identifier_regex = r'[a-zA-Z_]\w*'
     operator_regex = r'[+\-*/=]'
 
     # Tokenize the input string
-    tokens = re.findall(f'{float_regex}|{identifier_regex}|{operator_regex}', input_string)
+    tokens = re.findall(f'{float_regex}  |{identifier_regex}|{operator_regex}', input_string)
 
     # Check each token for validity
     for token in tokens:
@@ -18,8 +18,8 @@ def lex(input_string):
         elif re.match(operator_regex, token):
             print(f'Valid operator: {token}')
         else:
-            print(f'Invalid token: {token}')
+            print(f'Invalid  token: {token}')
 
-# Test the lexer on an example input string
-input_string = 'float x = a + 1b'
+# Test the lexer on an example input    string
+input_string = 'float x =             a + 1b'
 lex(input_string)
