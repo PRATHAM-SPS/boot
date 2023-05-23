@@ -1,7 +1,3 @@
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-
 int i=1,j=0,no=0,tmpch=90;
 char str[100],left[15],right[15];
 void findopr();
